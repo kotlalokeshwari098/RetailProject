@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DEF2F1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+:root {
+    --dark-green: #17252A;
+    --teal: #2B7A78;
+    --light-teal: #3AAFA9;
+    --light-grayish-teal: #DEF2F1;
+    --white: #FEFFFF;
+}
+
+.bg-dark-teal {
+    background-color: #17252A;
+}
+
+.bg-medium-dark-teal {
+    background-color: #2B7A78;
+}
+
+.bg-medium-teal {
+    background-color: #3AAFA9;
+}
+
+.bg-light-teal {
+    background-color: #DEF2F1;
+}
+
+.bg-white-custom {
+    background-color: #FEFFFF;
+}
+
+.text-dark-teal {
+    color: #17252A;
+}
+
+.text-medium-dark-teal {
+    color: #2B7A78;
+}
+
+.text-medium-teal {
+    color: #3AAFA9;
+}
+
+.text-light-teal {
+    color: #DEF2F1;
+}
+
+.text-white-custom {
+    color: #FEFFFF;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    padding: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-green);
+    padding: 15px;
+    height: 55px;
+    color: var(--white);
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon {
+    font-size: 40px;
+    color: #2B7A78;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-options {
+    padding-left: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+.header-options a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.header-options a:hover {
+    text-decoration: none;
+    color: #3AAFA9;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid var(--light-teal);
+    border-radius: 5px;
+    background: black;
+}
+
+.search button {
+    padding: 8px 12px;
+    background-color: var(--light-teal);
+    color: var(--dark-green);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.left-header {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+}
+
+.user-profile img {
+    height: 40px;
+    border-radius: 50px;
+}
+
+/* MAIN LAYOUT */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+main {
+    background-color: #FEFFFF;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main th,
+main td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+main input[type="number"] {
+    width: 48px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+main .cart-totals {
+    background-color: #DEF2F1;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .cart-totals table {
+    width: 100%;
+}
+
+main .cart-totals input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+main .cart-totals button {
+    background-color: #2B7A78;
+    color: #FEFFFF;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #17252A;
+    color: #FEFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+footer div {
+    width: 23%;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.image-product{
+    display: flex;
+    width: 400px;
+}

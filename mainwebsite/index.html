@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-main">
+                <div class="logo">Logo</div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Image Slider Section -->
+    <section class="slider">
+        <div class="slide fade">
+            <img src="customerimage1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="customerimage2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="customerimage1.jpg" alt="Slide 3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- New Section (After Image Slider) -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-image"><img src="customerimage1.jpg" alt="" width="250px" height="250px"></div>
+            <div class="hero-content">
+                <h1>Hero Title Example</h1>
+                <button class="hero-button">Log In to Manage Your Shop <span>&#10140;</span></button>
+                <button class="hero-button">Start Shopping Now <span>&#10140;</span></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-container">
+        <div class="about-text">
+          <h1>About Us Example</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.'</p>
+          <a href="#" class="read-more-btn">Read More</a>
+        </div>
+        <div class="about-image"></div>
+      </div>
+
+
+      <div class="services-section">
+        <h1>Services we provide</h1>
+        <p>Hero sub Title</p>
+      </div>
+    
+      <div class="cards">
+        <div class="card"></div>
+        <div class="card highlight"></div>
+        <div class="card"></div>
+      </div>
+
+      <!-- <section class="hero">
+        <div class="hero-content">
+          <h1>Hero Title</h1>
+          <h2>Hero Sub Title</h2>
+          <div class="dots">
+            <div class="dot">rahul</div>
+            <div class="dot">rahul</div>
+            <div class="dot">rahul</div>
+          </div>
+        </div>
+      </section> -->
+    
+      <section class="about">
+        <h3>Text block Example</h3>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+            </p>
+          </div>
+          <div class="contacts">
+            <p>+91 6309898987</p>
+            <p><a href="mailto:Stockify@gmail.com">Stockify@gmail.com</a></p>
+            <p>Hyderabad, Telangana</p>
+            <div class="social">
+              <a href="#">📱</a>
+              <a href="#">📧</a>
+              <a href="#">🌍</a>
+              <a href="#">📡</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <p>&copy; 2025 All Rights Reserved</p>
+      </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

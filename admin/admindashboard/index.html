@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="panel">
+            <h2>AdminPanel</h2>
+            <i class="fas fa-bars toggle-btn" onclick="toggleSidebar()"></i>
+        </div>
+        <ul>
+            <li class="active"><a href="index.html" ><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="../adminproductnew/index.html"><i class="fas fa-box"></i> Products</a></li>
+            <li><a href="../adminbilling/index.html"><i class="fas fa-file-invoice"></i> Billing</a></li>
+            <li><a href="../salesreport/index.html"><i class="fas fa-chart-line"></i> Sales Report</a></li>
+            <li><a href="#"><i class="fas fa-file-invoice"></i> Recommendations</a></li>
+            <li><a href="../adminsaleshistory/index.html" class="active"><i class="fas fa-history"></i> Sales History</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="header-right">
+                <input class="search" type="text" placeholder="Search...">
+                <div class="profile"></div>
+            </div>
+        </header>
+        <div class="cards">
+            <div class="card"><h3>Balance</h3><p>$41,210</p></div>
+            <div class="card"><h3>Income</h3><p>$41,210</p></div>
+            <div class="card"><h3>Expenses</h3><p>$41,210</p></div>
+            <div class="card"><h3>Savings</h3><p>$41,210</p></div>
+        </div>
+        <div class="overview">
+            <canvas id="chart"></canvas>
+        </div>
+        <div class="sales-history">
+            <h3>Sales History</h3>
+            <ul>
+                <li>Apples <span class="income">+$54.08</span></li>
+                <li>Toilet paper <span class="expense">-$39.65</span></li>
+                <li>Bag<span class="expense">-$29.78</span></li>
+                <li>Milk packets <span class="expense">-$46.61</span></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const ctx = document.getElementById('chart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [
+                    { label: 'Income', data: [500, 800, 200, 900, 700, 500, 1100, 500, 600, 900, 1200, 800], borderColor: '#3AAFA9', backgroundColor: 'transparent' },
+                    { label: 'Expenses', data: [200, 300, 150, 600, 400, 300, 700, 400, 450, 600, 900, 600], borderColor: '#FFC107', backgroundColor: 'transparent' }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+            }
+        });
+    </script>
+</body>
+</html>

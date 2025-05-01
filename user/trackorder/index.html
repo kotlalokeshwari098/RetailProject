@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Stockify</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dark-blue-green: #17252A;
+            --teal: #2B7A78;
+            --light-teal: #3AAFA9;
+            --very-light-teal: #DEF2F1;
+            --almost-white: #FEFFFF;
+        }
+        
+        .bg-dark-blue-green {
+            background-color: var(--dark-blue-green);
+        }
+        
+        .bg-teal {
+            background-color: var(--teal);
+        }
+        
+        .bg-light-teal {
+            background-color: var(--light-teal);
+        }
+        
+        .bg-very-light-teal {
+            background-color: var(--very-light-teal);
+        }
+        
+        .bg-almost-white {
+            background-color: var(--almost-white);
+        }
+        
+        .text-dark-blue-green {
+            color: var(--dark-blue-green);
+        }
+        
+        .text-teal {
+            color: var(--teal);
+        }
+        
+        .text-light-teal {
+            color: var(--light-teal);
+        }
+        
+        .text-very-light-teal {
+            color: var(--very-light-teal);
+        }
+        
+        .text-almost-white {
+            color: var(--almost-white);
+        }
+    </style>
+</head>
+<body class="bg-very-light-teal flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-dark-blue-green text-almost-white">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <div class="text-2xl font-bold">Stockify</div>
+                <nav class="ml-10 space-x-4">
+                    <a href="#" class="hover:text-light-teal">Home</a>
+                    <a href="#" class="hover:underline text-light-teal">Track Order</a>
+                    <a href="#" class="hover:underline">Whishlist</a>
+                    <a href="#" class="hover:underline">Cart</a>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search for anything..." class="px-4 py-2 rounded">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-10 flex-grow">
+        <div class="bg-almost-white p-8 rounded shadow">
+            <h1 class="text-2xl font-bold mb-4">Track Order</h1>
+            <p class="mb-4">To track your order please enter your order ID in the input field below and press the "Track Order" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+            <form class="space-y-4">
+                <div class="flex space-x-4">
+                    <input type="text" placeholder="ID..." class="w-1/2 px-4 py-2 border rounded">
+                    <input type="email" placeholder="Email address" class="w-1/2 px-4 py-2 border rounded">
+                </div>
+                <button type="submit" class="bg-light-teal text-dark-blue-green px-6 py-2 rounded">TRACK ORDER</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue-green text-almost-white py-10 mt-auto">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-xl font-bold mb-4">Stockify</h2>
+                <p>Customer Supports:</p>
+                <p>(629) 555-0129</p>
+                <p>4517 Washington Ave.</p>
+                <p>Manchester, Kentucky 39495</p>
+                <p>info@kinbo.com</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4">TOP CATEGORY</h2>
+                <ul class="space-y-2">
+                    <li>Computer & Laptop</li>
+                    <li>SmartPhone</li>
+                    <li>Headphone</li>
+                    <li>Accessories</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4">QUICK LINKS</h2>
+                <ul class="space-y-2">
+                    <li>Privacy Policy</li>
+                    <li>Returns</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-4">DOWNLOAD OUR APP</h2>
+                <ul class="space-y-2">
+                    <li>Google Play</li>
+                    <li>Apple Store</li>
+                </ul>
+                <h2 class="text-xl font-bold mb-4 mt-8">POPULAR TAGS</h2>
+                <ul class="space-y-2">
+                    <li>#Tag1</li>
+                    <li>#Tag2</li>
+                    <li>#Tag3</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

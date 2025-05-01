@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLICON Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Stockify</div>
+        <div class="header-options">
+            <div><a href="../userproductsnew/index.html">Home</a></div>
+            <div><a href="../trackorder/index.html">Trackorder</a></div>
+            <div><a href="../whislist/index.html">Whishlist</a></div>
+        </div>
+        <div class="left-header">
+            <div class="search">
+                <input type="text" class="search-header" placeholder="Search...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="cart-container">
+                <span class="material-icons cart-icon">shopping_cart</span>
+                <span class="cart-badge">2</span>
+            </div>
+
+            <i class="fas fa-bell"></i>
+            <div class="user-profile">
+                <img src="profile.jpg" alt="User">
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Shopping Cart -->
+    <main class="container">
+        <div class="left">
+
+            <h1 class="text-2xl font-bold mb-4 text-dark-teal">Shopping Cart</h1>
+            <div class="flex justify-between">
+                <!-- Cart Items -->
+                <div style="width: 65%;">
+                    <table class="text-left text-dark-teal">
+                        <thead>
+                            <tr>
+                                <th>Products</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Sub-Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td>
+                                    <div class="image-product">
+                                        <img src="apples.jpeg" alt="4K UHD LED Smart TV" style="height: 64px; margin-right: 16px;">
+                                        <div>Apple Indian - 100% Natural & Farm Fresh</div>
+                                    </div>
+                                    
+                                </td>
+                                <td>$70</td>
+                                <td>
+                                    <input type="number" value="1">
+                                </td>
+                                <td>$70</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td>
+                                    <div class="image-product">
+                                        <img src="apples.jpeg" alt="4K UHD LED Smart TV" style="height: 64px; margin-right: 16px;">
+                                        <div>Apple Indian - 100% Natural & Farm Fresh</div>
+                                    </div>
+                                </td>
+                                <td>$250</td>
+                                <td>
+                                    <input type="number" value="3">
+                                </td>
+                                <td>$750</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             </div>
+        </div>
+            <!-- Cart Totals -->
+            <div class="cart-totals" style="width: 30%; padding-left: 16px;">
+                <div>
+                    <h2 class="text-xl font-semibold text-dark-teal">Cart Totals</h2>
+                    <table class="text-left text-dark-teal">
+                        <tbody>
+                            <tr class="border-b">
+                                <td>Sub-Total</td>
+                                <td>$820</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td>Shipping</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td>Discount</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td>Tax</td>
+                                <td>$5</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Total</td>
+                                <td class="font-semibold">$835</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="text" placeholder="Coupon Code">
+                    <button class="bg-medium-dark-teal text-white-custom">Apply Coupon</button>
+                    <div>
+                        <button class="bg-gray-500 text-white-custom">Return to Shop</button>
+                        <button class="bg-medium-dark-teal text-white-custom">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-teal text-white-custom">
+        <div class="container">
+            <div>
+                <h3>Contact Information</h3>
+                <p>+1-202-555-0104</p>
+            </div>
+            <div>
+                <h3>Top Categories</h3>
+                <p>Electronics, Home Appliances, Fashion</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p>Track Order, Compare, Customer Support, Need Help</p>
+            </div>
+            <div>
+                <h3>App Download</h3>
+                <p>Download our app from Play Store and App Store</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

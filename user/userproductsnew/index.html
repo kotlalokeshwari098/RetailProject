@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Stockify</div>
+        <div class="header-options">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="../trackorder/index.html">Trackorder</a></div>
+            <div><a href="#">Whishlist</a></div>
+        </div>
+        <div class="left-header">
+            <div class="search">
+                    <input type="text"  class="search-header" placeholder="Search...">
+                    <i class="fas fa-search search-icon" ></i>
+            </div>
+            <div class="cart-container">
+                <a href="../cart/index.html"><span class="material-icons cart-icon">shopping_cart</span>
+                    <span class="cart-badge">2</span></a>
+                
+            </div>
+            
+            <i class="fas fa-bell"></i>
+             <div class="user-profile">
+                        <img src="profile.jpg" alt="User">
+             </div>
+
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>🥬Vegetables</li>
+                <li>🍋 Fruits</li>
+                <li>🍞 Dairy Products</li>
+                <li>🥫 Snacks</li>
+                <li>🪣Household Supplies</li>
+            </ul>
+
+            <h2>Price Range</h2>
+            <ul>
+                <li>Under $20</li>
+                <li>$25 to $100</li>
+                <li>$100 to $300</li>
+                <li>$300 to $500</li>
+                <li>$500 to $1,000</li>
+            </ul>
+        </aside>
+
+        <section class="products">
+            <div class="product">
+                <img src="apples.jpeg" alt="Product">
+                <!-- <h3>Apple Indian - 100% Natural & Farm Fresh</h3> -->
+                  <!-- Quantity Input Added -->
+                <div class="product-details">
+                    <h3><a href="../userproductdetail/index.html">Apple Indian - 100% Natural & Farm Fresh</a></h3>
+                    
+                    <div class="category"><b>Category: </b>Vegetables</div>
+   
+                    <div class="quantity-container">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="1" value="1">
+                   </div>
+
+                   <div class="price-item"><b>Price: </b>    $70</div>
+
+                </div>
+
+               
+
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="apples.jpeg" alt="Product">
+                <!-- <h3>Apple Indian - 100% Natural & Farm Fresh</h3> -->
+                  <!-- Quantity Input Added -->
+                <div class="product-details">
+                    <h3><a href="../userproductdetail/index.html">Apple Indian - 100% Natural & Farm Fresh</a></h3>
+                    
+                    <div class="category"><b>Category: </b>Fruits</div>
+   
+                    <div class="quantity-container">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="1" value="1">
+                   </div>
+
+                   <div class="price-item"><b>Price: </b>    $70</div>
+
+                </div>
+
+               
+
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="apples.jpeg" alt="Product">
+                <!-- <h3>Apple Indian - 100% Natural & Farm Fresh</h3> -->
+                  <!-- Quantity Input Added -->
+                <div class="product-details">
+                    <h3><a href="../userproductdetail/index.html">Apple Indian - 100% Natural & Farm Fresh</a></h3>
+                    
+                    <div class="category"><b>Category: </b>Vegetables</div>
+   
+                    <div class="quantity-container">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="1" value="1">
+                   </div>
+
+                   <div class="price-item"><b>Price: </b>    $70</div>
+
+                </div>
+
+               
+
+                <button>Add to Cart</button>
+            </div>        
+        </section>
+       
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h4>Customer Support</h4>
+            <p>+1-202-555-0104</p>
+            <p>info@kinbo.com</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Shop Product</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Popular Tags</h4>
+            <p>Game, iPhone, TV, Macbook</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --dark-blue-green: #17252A;
+            --teal: #2B7A78;
+            --light-teal: #3AAFA9;
+            --very-light-teal: #DEF2F1;
+            --almost-white: #FEFFFF;
+        }
+        
+        .bg-dark-blue-green {
+            background-color: var(--dark-blue-green);
+        }
+        
+        .bg-teal {
+            background-color: var(--teal);
+        }
+        
+        .bg-light-teal {
+            background-color: var(--light-teal);
+        }
+        
+        .bg-very-light-teal {
+            background-color: var(--very-light-teal);
+        }
+        
+        .bg-almost-white {
+            background-color: var(--almost-white);
+        }
+        
+        .text-dark-blue-green {
+            color: var(--dark-blue-green);
+        }
+        
+        .text-teal {
+            color: var(--teal);
+        }
+        
+        .text-light-teal {
+            color: var(--light-teal);
+        }
+        
+        .text-very-light-teal {
+            color: var(--very-light-teal);
+        }
+        
+        .text-almost-white {
+            color: var(--almost-white);
+        }
+    </style>
+</head>
+<body class="bg-very-light-teal">
+
+    <!-- Header -->
+    <header class="bg-dark-blue-green text-almost-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="your-logo.png" alt="Logo" class="h-8 mr-4">
+            <div class="text-xl">Stockify</div>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-almost-white">Track Order</a></li>
+                <li><a href="#" class="text-almost-white">Compare</a></li>
+                <li><a href="#" class="text-almost-white">Customer Support</a></li>
+                <li><a href="#" class="text-almost-white">Need Help</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <input type="text" placeholder="Search for anything..." class="p-2 rounded-lg">
+            <div>
+                <a href="tel:+12025550104" class="text-almost-white">+1-202-555-0104</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Order Success Section -->
+    <div class="max-w-7xl mx-auto p-8 flex justify-center items-center h-screen bg-almost-white">
+        <div class="text-center p-12 bg-almost-white shadow-lg rounded-lg w-full max-w-lg">
+            <!-- Corrected Success Icon -->
+            <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 text-green-500 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+            </div>
+            <!-- Success Message -->
+            <h2 class="text-3xl font-semibold mb-4">Your order is successfully placed</h2>
+            <p class="text-xl text-gray-600 mb-6">Pellentesque sed lectus nec tortor tristique accumsan quis dictum risus. Donec volutpat mollis nulla non facilisis.</p>
+
+            <!-- Buttons -->
+            <div class="space-x-4">
+                <a href="/dashboard" class="inline-block bg-light-teal text-dark-blue-green py-4 px-10 rounded-lg text-lg">Go to Dashboard</a>
+                <a href="/order" class="inline-block bg-teal text-almost-white py-4 px-10 rounded-lg text-lg">View Order</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue-green text-almost-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="space-y-4">
+                <p>Customer Support: (629) 555-0129</p>
+                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                <p><a href="mailto:info@kinko.com" class="text-light-teal">info@kinko.com</a></p>
+            </div>
+            <div class="mt-8">
+                <p>&copy; 2025 CLICON. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

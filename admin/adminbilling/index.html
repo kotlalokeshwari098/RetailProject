@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #DEF2F1;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #17252A;
+            color: white;
+            padding: 20px;
+            height: auto;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .sidebar .active {
+            background-color: #3AAFA9;
+            border-radius: 5px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2B7A78;
+            color: white;
+            padding: 5px;
+            height: 70px;
+            border-radius: 5px;
+        }
+        .header-right{
+            display: flex;
+            gap: 30px;
+            margin: 20px;
+            align-items: center;
+        }
+        .search-header{
+            width: 250px;
+            height:35px;
+        }
+        header .user-profile{
+            width: 50px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 50px;
+        }
+        .billing-section {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .customer-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .qty-input {
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .summary {
+            background: #17252A;
+            color: white;
+            padding-top: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: right;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .checkout {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sidebar ul li a {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    gap: 15px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li .active {
+    background: var(--teal);
+}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li ><a href="../admindashboard/index.html" ><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="../adminproductnew/index.html"><i class="fas fa-box"></i> Products</a></li>
+            <li class="active"><a href="../adminbilling/index.html"><i class="fas fa-file-invoice"></i> Billing</a></li>
+            <li><a href="../salesreport/index.html"><i class="fas fa-chart-line"></i> Sales Report</a></li>
+            <li><a href="#"><i class="fas fa-file-invoice"></i> Recommendations</a></li>
+            <li><a href="../adminsaleshistory/index.html" class="active"><i class="fas fa-history"></i> Sales History</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Billing</h1>
+            <div class="header-right">
+                <input type="text" class="search-header" placeholder="Search...">
+                <div class="user-profile"></div>
+            </div>
+        </header>
+        <div class="billing-section">
+            <input type="text" placeholder="Enter the Customer Name" class="customer-input">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Rental Price</th>
+                        <th>Quantity</th>
+                        <th>SubTotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple</td>
+                        <td>$2.50</td>
+                        <td><input type="number" class="qty-input" value="1" min="1" oninput="updateTotal()"></td>
+                        <td class="subtotal">$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Mangoes</td>
+                        <td>$3.00</td>
+                        <td><input type="number" class="qty-input" value="1" min="1" oninput="updateTotal()"></td>
+                        <td class="subtotal">$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Potatoes</td>
+                        <td>$1.50</td>
+                        <td><input type="number" class="qty-input" value="1" min="1" oninput="updateTotal()"></td>
+                        <td class="subtotal">$1.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="summary">
+            <p>Amount Due: <span id="amount-due">$7.00</span></p>
+            <p>No. of Items: <span id="item-count">3</span></p>
+            <p>Total Tax: <span>$0.00</span></p>
+            <h2 id="total-price">$7.00</h2>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+    
+    <script>
+        function updateTotal() {
+            let rows = document.querySelectorAll("tbody tr");
+            let total = 0;
+            let itemCount = 0;
+
+            rows.forEach(row => {
+                let price = parseFloat(row.cells[1].innerText.replace("$", ""));
+                let qty = parseInt(row.cells[2].querySelector("input").value);
+                let subtotal = price * qty;
+                row.cells[3].innerText = `$${subtotal.toFixed(2)}`;
+                total += subtotal;
+                itemCount += qty;
+            });
+
+            document.getElementById("amount-due").innerText = `$${total.toFixed(2)}`;
+            document.getElementById("total-price").innerText = `$${total.toFixed(2)}`;
+            document.getElementById("item-count").innerText = itemCount;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#DEF2F1]">
+
+    <!-- Header -->
+    <header class="bg-[#2B7A78] text-[#FEFFFF] p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <!-- <img src="your-logo.png" alt="Logo" class="h-8 mr-4"> -->
+            <div class="text-xl">Stockify</div>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-[#FEFFFF]">Track Order</a></li>
+                <li><a href="#" class="text-[#FEFFFF]">Compare</a></li>
+                <li><a href="#" class="text-[#FEFFFF]">Customer Support</a></li>
+                <li><a href="#" class="text-[#FEFFFF]">Need Help</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <input type="text" placeholder="Search for anything..." class="p-2 rounded-lg">
+            <div>
+                <a href="tel:+12025550104" class="text-[#FEFFFF]">+1-202-555-0104</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Checkout Section -->
+    <div class="max-w-7xl mx-auto p-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- Billing Information Section -->
+        <div class="bg-[#FEFFFF] p-6 rounded-lg shadow-lg space-y-4">
+            <h2 class="text-2xl font-semibold text-[#17252A]">Billing Information</h2>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="First Name" class="p-2 border border-[#3AAFA9] rounded-lg">
+                    <input type="text" placeholder="Last Name" class="p-2 border border-[#3AAFA9] rounded-lg">
+                    <input type="text" placeholder="Company Name (Optional)" class="p-2 border border-[#3AAFA9] rounded-lg">
+                    <input type="text" placeholder="Address" class="p-2 border border-[#3AAFA9] rounded-lg">
+                    <select class="p-2 border border-[#3AAFA9] rounded-lg">
+                        <option>Select Country</option>
+                        <option>USA</option>
+                        <option>Canada</option>
+                    </select>
+                    <select class="p-2 border border-[#3AAFA9] rounded-lg">
+                        <option>Select Region/State</option>
+                    </select>
+                    <input type="text" placeholder="City" class="p-2 border border-[#3AAFA9] rounded-lg">
+                    <input type="text" placeholder="Zip Code" class="p-2 border border-[#3AAFA9] rounded-lg">
+                    <input type="email" placeholder="Email" class="p-2 border border-[#3AAFA9] rounded-lg">
+                    <input type="tel" placeholder="Phone Number" class="p-2 border border-[#3AAFA9] rounded-lg">
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    <label>Ship to a different address</label>
+                </div>
+            </form>
+
+            <!-- Payment Options Section -->
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-[#17252A]">Payment Option</h3>
+                <div class="flex space-x-4 mt-4">
+                    <input type="radio" name="payment" id="cash-on-delivery" class="hidden" checked>
+                    <label for="cash-on-delivery" class="bg-[#DEF2F1] p-2 rounded-lg cursor-pointer border border-[#3AAFA9]">Cash on Delivery</label>
+                    <input type="radio" name="payment" id="venmo" class="hidden">
+                    <label for="venmo" class="bg-[#DEF2F1] p-2 rounded-lg cursor-pointer border border-[#3AAFA9]">Venmo</label>
+                    <input type="radio" name="payment" id="paypal" class="hidden">
+                    <label for="paypal" class="bg-[#DEF2F1] p-2 rounded-lg cursor-pointer border border-[#3AAFA9]">Paypal</label>
+                    <input type="radio" name="payment" id="amazon-pay" class="hidden">
+                    <label for="amazon-pay" class="bg-[#DEF2F1] p-2 rounded-lg cursor-pointer border border-[#3AAFA9]">Amazon Pay</label>
+                    <input type="radio" name="payment" id="debit-credit-card" class="hidden">
+                    <label for="debit-credit-card" class="bg-[#DEF2F1] p-2 rounded-lg cursor-pointer border border-[#3AAFA9]">Debit/Credit Card</label>
+                </div>
+
+                <!-- Card Details -->
+                <div class="mt-6">
+                    <input type="text" placeholder="Name on Card" class="p-2 border border-[#3AAFA9] rounded-lg w-full mb-4">
+                    <input type="text" placeholder="Card Number" class="p-2 border border-[#3AAFA9] rounded-lg w-full mb-4">
+                    <div class="flex space-x-4">
+                        <input type="text" placeholder="Expire Date (MM/YY)" class="p-2 border border-[#3AAFA9] rounded-lg w-full">
+                        <input type="text" placeholder="CVC" class="p-2 border border-[#3AAFA9] rounded-lg w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="bg-[#FEFFFF] p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-[#17252A] mb-6">Order Summary</h2>
+            <div class="space-y-4">
+                <div class="flex justify-between">
+                    <div>Apples fresh garden</div>
+                    <div>$170</div>
+                </div>
+                <div class="flex justify-between">
+                    <div>Toilet paper</div>
+                    <div>$250</div>
+                </div>
+                <hr class="my-4">
+                <div class="flex justify-between">
+                    <div>Sub-total</div>
+                    <div>$320</div>
+                </div>
+                <div class="flex justify-between">
+                    <div>Shipping</div>
+                    <div>Free</div>
+                </div>
+                <div class="flex justify-between">
+                    <div>Discount</div>
+                    <div>-$24</div>
+                </div>
+                <div class="flex justify-between">
+                    <div>Tax</div>
+                    <div>$61.99</div>
+                </div>
+                <hr class="my-4">
+                <div class="flex justify-between font-bold">
+                    <div>Total</div>
+                    <div>$357.99 USD</div>
+                </div>
+            </div>
+
+            <button class="mt-8 w-full bg-[#3AAFA9] text-[#FEFFFF] py-3 rounded-lg">Place Order</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#17252A] text-[#FEFFFF] py-12 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="space-y-4">
+                            <p>Customer Support: (629) 555-0129</p>
+                            <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                            <p><a href="mailto:info@kinko.com" class="text-orange-500">info@kinko.com</a></p>
+                        </div>
+                        <div class="mt-8">
+                            <p>&copy; 2025 Stockify. All rights reserved.</p>
+                        </div>
+                    </div>
+                </footer>
+            
+            </body>
+            </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="text-xl font-bold">CLICON</div>
+        <input type="text" placeholder="Search for anything..." class="border p-2 rounded w-1/3">
+        <div class="flex space-x-4">
+            <a href="#" class="text-gray-700">Track Order</a>
+            <a href="#" class="text-gray-700">Customer Support</a>
+        </div>
+    </nav>
+    
+    <!-- Filters & Sorting -->
+    <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center">
+            <h2 class="text-lg font-semibold">65,867 Results found</h2>
+            <select class="border p-2 rounded">
+                <option>Sort by: Most Popular</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Product Grid -->
+    <div class="container mx-auto p-4 grid grid-cols-4 gap-4">
+        <div class="bg-white p-4 rounded shadow">
+            <img src="https://via.placeholder.com/150" alt="Product" class="w-full h-40 object-cover">
+            <h3 class="mt-2 font-semibold">TOZO T6 True Wireless Earbuds</h3>
+            <p class="text-gray-500">$70</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+            <img src="https://via.placeholder.com/150" alt="Product" class="w-full h-40 object-cover">
+            <h3 class="mt-2 font-semibold">Samsung Galaxy S21 5G</h3>
+            <p class="text-gray-500">$2,300</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+            <img src="https://via.placeholder.com/150" alt="Product" class="w-full h-40 object-cover">
+            <h3 class="mt-2 font-semibold">Amazon Basics HDMI Cable</h3>
+            <p class="text-gray-500">$360</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+            <img src="https://via.placeholder.com/150" alt="Product" class="w-full h-40 object-cover">
+            <h3 class="mt-2 font-semibold">Portable Washing Machine</h3>
+            <p class="text-gray-500">$80</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-4 mt-8">
+        <div class="container mx-auto grid grid-cols-3 gap-4">
+            <div>
+                <h4 class="font-bold">Customer Support</h4>
+                <p>+1-202-555-0104</p>
+                <p>info@kinbo.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="text-gray-400">Shop Product</a></li>
+                    <li><a href="#" class="text-gray-400">Wishlist</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Popular Tags</h4>
+                <p class="text-gray-400">Game, iPhone, TV, Macbook</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

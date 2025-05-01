@@ -1,0 +1,265 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+    --dark-green: #17252A;
+    --teal: #2B7A78;
+    --light-teal: #3AAFA9;
+    --light-grayish-teal: #DEF2F1;
+    --white: #FEFFFF;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #DEF2F1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-green);
+    padding: 15px;
+    height: 55px;
+    color: var(--white);
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+.header-options{
+    padding-left: 100px;
+    display: flex;
+    gap: 50px;
+}
+.header-options a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+.header-options a:hover{
+    text-decoration: none;
+    color:#3AAFA9;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.search {
+     position:relative;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid var(--light-teal);
+    border-radius: 5px;
+    background: black;
+}
+
+.search button {
+    padding: 8px 12px;
+    background-color: var(--light-teal);
+    color: var(--dark-green);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.left-header{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px
+}
+.search-icon{
+    position:absolute;
+    right: 12px;
+}
+.user-profile img{
+    height:40px;
+    border-radius: 50px;
+}
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon {
+    font-size: 40px;
+    color: #2B7A78;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 10px 30px;
+    color: #3AAFA9;
+}
+
+/* Product Section */
+.container {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    /* align-items: cc; */
+    gap: 30px;
+}
+
+.product-image {
+    background:white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 90%;
+    height: 250px;
+    
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    border: 1px solid #3AAFA9;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Product Info */
+.product-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #17252A;
+}
+
+.sku {
+    color: #2B7A78;
+}
+
+.rating {
+    color: #F4A261;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #3AAFA9;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.discount {
+    color: red;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.cart {
+    background-color: #2B7A78;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart:hover{
+    background: var(--dark-green);
+}
+
+.buy {
+    background-color: #3AAFA9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.buy:hover{
+    background: var(--dark-green);
+}
+
+/* Related Products */
+.related-products {
+    padding: 30px;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #17252A;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.description{
+    margin-left:100px;
+}
+.related-products{
+    margin-left:70px;
+}

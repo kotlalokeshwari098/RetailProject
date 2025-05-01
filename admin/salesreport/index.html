@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #DEF2F1;
+            height: auto;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #17252A;
+            padding: 20px;
+            color: white;
+            height: auto;
+            transition: background-color 0.3s;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            padding: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .sidebar li:hover, .active {
+            background-color: #3AAFA9;
+            border-radius: 5px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2B7A78;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .search-header{
+            width: 200px;
+            height: 30px;
+        }
+        .filters {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 5px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #3AAFA9;
+            color: white;
+        }
+        .sidebar ul li a {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    gap:10px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li .active {
+    background: var(--teal);
+}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li ><a href="../admindashboard/index.html" ><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="../adminproductnew/index.html"><i class="fas fa-box"></i> Products</a></li>
+            <li><a href="../adminbilling/index.html"><i class="fas fa-file-invoice"></i> Billing</a></li>
+            <li class="active"><a href="../salesreport/index.html"><i class="fas fa-chart-line"></i> Sales Report</a></li>
+            <li><a href="#"><i class="fas fa-file-invoice"></i> Recommendations</a></li>
+            <li><a href="../adminsaleshistory/index.html"><i class="fas fa-history"></i> Sales History</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Sales Report</h1>
+            <input type="text" class="search-header" placeholder="Search...">
+        </header>
+        <div class="filters">
+            <label for="">Start Date:</label>
+            <input type="date" placeholder="Start Date">
+            <label for="">End Date:</label>
+            <input type="date" placeholder="End Date">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Products</th>
+                    <th>Date</th>
+                    <th>Total Quantity</th>
+                    <th>Total Sales</th>
+                    <th>Total Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+                <tr><td>#AHGA68</td><td>23/09/2022</td><td>250</td><td>$100</td><td>$000</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
